@@ -1,0 +1,45 @@
+.Logo {
+    position: fixed;
+    z-index: 999;
+    top: var(--logo-spacing);
+    left: var(--logo-spacing);
+    padding: var(--logo-spacing);
+    width: var(--logo-width);
+    height: var(--logo-height);
+    border-radius: 50%;
+    background-color: var(--alternate-color);
+  
+    @include mq(m) {
+      position: static;
+      width: var(--header-height);
+      height: var(--header-height);
+      grid-area: logo;
+    }
+}
+.Title {
+    margin: 2rem 0;
+    font-size: 4vw;
+    color: var(--main-color);
+  
+    @include mq(m) {
+      grid-area: title;
+      align-self: center;
+      margin: 0;
+      font-size: 1.5vw;
+      text-align: center;
+    }
+  
+    @include mq(l) {
+      margin: 2rem 0;
+      text-align: initial;
+      flex-grow: 1;
+    }
+  
+    * {
+      margin-bottom: .5rem;
+      @include mq(m) { margin-bottom: 0; }
+      @include mq(l) { margin-bottom: .5rem; }
+    }
+  
+    small { text-transform: uppercase; }
+  }

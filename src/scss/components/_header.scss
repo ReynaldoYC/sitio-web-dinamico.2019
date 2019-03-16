@@ -3,6 +3,7 @@
     z-index: 998;
     top: 0;
     padding: .5rem;
+    padding-top: var(--header-height);
     width: 50%;
     margin-left: -100vw;
     transition: margin-left .2s ease;
