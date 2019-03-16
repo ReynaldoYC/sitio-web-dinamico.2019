@@ -16,6 +16,7 @@ const d = document,
     footerYear = d.querySelector('.Footer-year')
 
 footerYear.textContent = new Date().getFullYear()
+toggleNav()
 d.addEventListener('DOMContentLoaded', e => {
     main.innerHTML = tplHome
 })
